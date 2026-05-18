@@ -42,8 +42,8 @@ DELIMITER ;
 -- PHẦN KIỂM THỬ 
 -- Test Case 1: Cấp phát hợp lệ
  CALL DispenseMedicine(1, 1, 10, @status);
- SELECT @status AS KetQua;
+SELECT @thongbao AS 'Trạng thái hệ thống';
 
 -- Test Case 2: Chặn lỗi vượt tồn kho
  CALL DispenseMedicine(1, 2, 10, @status);
- SELECT @status AS KetQua;
+SELECT @thongbao AS 'Trạng thái hệ thống';
