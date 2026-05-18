@@ -1,4 +1,4 @@
--- PHẦN A: PHÂN TÍCH & ĐỀ XUẤT ĐA GIẢI PHÁP
+-- Phần A: Phân tích và đề xuất giải pháp 
 -- 1. Định nghĩa I/O (Dữ liệu đầu vào/Đầu ra):
 --    - Tham số IN: p_patient_id (Mã bệnh nhân), p_amount (Số tiền thanh toán).
 --    - Tham số OUT: p_message (Chuỗi thông báo trạng thái để hiển thị lên Frontend).
@@ -17,7 +17,7 @@
 
 -- >>>> Chọn chiến lược 2:
 
--- PHẦN B: THIẾT KẾ & TRIỂN KHAI
+-- Phần B: Thiết kế và triển khai
 -- 1. Thiết kế luồng logic (Logical Flow):
 --    - B1. Khởi tạo: Mở TRANSACTION.
 --    - B2. Rào chắn 1: Bẫy lỗi bảo mật (Số tiền <= 0 -> ROLLBACK).
