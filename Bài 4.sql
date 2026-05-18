@@ -75,12 +75,12 @@ DELIMITER ;
 
 -- Test Case 1: Giao dịch hợp lệ (Đủ tiền)
  CALL ProcessOneTouchPayment(1, 100000, @status_msg);
- SELECT @status_msg AS KetQua_TestCase1;
+SELECT @thongbao AS 'Kết quả Nghiệm thu 1';
 
 -- Test Case 2: Chặn lỗi số dư ví không đủ
  CALL ProcessOneTouchPayment(2, 200000, @status_msg);
- SELECT @status_msg AS KetQua_TestCase2;
+SELECT @thongbao AS 'Kết quả Nghiệm thu 2';
 
 -- Test Case 3: Bẫy lỗi dữ liệu (Truyền số tiền âm)
 CALL ProcessOneTouchPayment(1, -50000, @status_msg);
-SELECT @status_msg AS KetQua_TestCase3;
+SELECT @thongbao AS 'Kết quả Nghiệm thu 3';
